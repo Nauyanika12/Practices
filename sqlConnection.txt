@@ -1,0 +1,48 @@
+SQL Connection-------------------------------
+
+
+const sql=require("MySQL")
+const con=sql.createconnection(
+
+{
+
+"host":"localhost",
+"username":"root",
+database:"student",
+password:"12345",
+port:3308,
+
+
+
+
+}
+
+
+
+
+
+
+
+con.query(select*from table,(err,result)=>{
+
+res.send(result )
+
+
+})
+
+
+
+con.connect((err)=>{
+
+console.log("server is connecting")
+})
+
+
+
+
+
+
+
+
+
+)
